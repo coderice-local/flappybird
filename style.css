@@ -1,0 +1,40 @@
+#game{
+    width: 1000px;
+    height: 600px;
+    border: 1px solid black;
+}
+
+#pipe{
+    width: 100px;
+    height: 600px;
+    position: relative;
+    left: 900px;
+    background-color: darkcyan;
+    animation: pipe 4s infinite linear;
+}
+
+#pipe-gap{
+    width: 100px;
+    height: 200px;
+    position: relative;
+    background-color: white;
+    top: 200px;
+}
+
+#bird {
+    width: 50px;
+    height: 10px;
+    background-color: tomato;
+    position: relative;
+    top: -300px;
+}
+
+@keyframes pipe {
+    0% {
+        left: 900px;
+    }
+
+    100% {
+        left: -100px;
+    }
+}
